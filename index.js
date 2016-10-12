@@ -3,7 +3,7 @@
 const { Database } = require('sqlite3').verbose()
 const db = new Database('db/Chinook_Sqlite.sqlite')
 const Table = require('cli-table');
-let table = new Table({head: ["Sales Agents"]});
+let table = new Table({head: ["Sales Agents"], style: { compact: true}});
 
 
 // let query = `SELECT Customer.FirstName || ' ' || Customer.LastName AS 'Name', Customer.CustomerId, Customer.Country
